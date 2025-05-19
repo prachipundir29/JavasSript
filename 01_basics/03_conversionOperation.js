@@ -22,6 +22,21 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
   //"Prachi Pundir" => true
 
 
-  let someNumber = 44
-  let stringNumber = String(someNumber)
-    console.log( typeof stringNumber );
+  // let someNumber = 44
+  // let stringNumber = String(someNumber)
+  //   console.log( typeof stringNumber );
+   
+
+    // ****** Operations******
+    let str1 = "Prachi"
+    let str2 = " Pundir"
+    let str3 = str1+str2
+    console.log(str3);
+    
+    // console.log("1" +2); => 12
+    // console.log(1 +"2"); => 12
+    // console.log("1" +2 +2); => 122
+    // console.log(1 +2 +"2"); => 32
+
+     console.log( (3+5)* 5 % 3)
+    
