@@ -23,3 +23,31 @@ const bigNumber = 24357865243124375n   //BigInt
 // #Reference (Non Primitive)
 
 // Array, Objects, Functions
+
+// +++++++++ Memory +++++++
+// There are two type of memory
+//1. Stack Memory (Primitive)
+//2. Heap Memory (Non-Primitive)
+
+let myName = "prachipundir"
+
+let anotherName = myName
+anotherName = "Shreya"
+
+console.log(myName);
+console.log(anotherName);
+
+// Heap Memory Example
+
+let userOne = {
+    email: "prachi@google.com",
+    city: "Muzaffarnagar"
+}
+   
+  let userTwo = userOne 
+userTwo.email = "simran@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email );
+
+
