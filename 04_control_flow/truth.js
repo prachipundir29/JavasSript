@@ -34,3 +34,5 @@ if (Object.keys(emptyObj).length === 0) {
 // true
 // 0 = ''
 // true
+
+// next Topic
