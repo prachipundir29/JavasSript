@@ -15,7 +15,7 @@ for (const key in myObject) {
 
     for (const key in programming) {
        
-       console.log(key);
+      //  console.log(programming[key]);
         
       }
     
