@@ -26,6 +26,17 @@ map.set('Fr', "France")
 // console.log(map);
 
 for (const [key, Val] of map) {
-    console.log(key, ":-", Val );
+    // console.log(key, ":-", Val );
     
 }
+
+const myObject = {
+    'game1' : 'NFS',
+    'game2' : 'Spiderman'
+}
+
+for (const [key, value] of myObject) {
+    // console.log(key, ':-', value);  Not iteratable
+    
+}
+
