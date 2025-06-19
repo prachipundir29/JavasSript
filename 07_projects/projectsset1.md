@@ -8,7 +8,7 @@
 
 # Solution code
 
-## project 1
+## project 1 Solution
 
 ```javaScript
 const buttons = document.querySelectorAll('.button');
