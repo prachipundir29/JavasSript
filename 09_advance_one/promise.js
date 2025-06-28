@@ -13,7 +13,7 @@ promiseOne.then(function(){
     
 })
 
-new PromiseTwo(function(resolve, reject){
+new Promise(function(resolve, reject){
     setTimeout(function(){
     console.log("Async Task 2");
        resolve()    
@@ -36,3 +36,51 @@ PromiseThree.then(function(user){
   console.log(user);
   
 })
+
+const promiseFour = new Promise(function(resolve, reject){
+   setTimeout(function(){
+    let error = false
+    if(!error){
+       resolve({name: "rehat", password: 122564})
+    } else {
+      reject('ERROR: Something went wrong')
+    }
+   }, 1000)
+})
+
+promiseFour.then((user) => {
+  console.log(user);
+  return user.name
+})
+.then((name) => {
+   console.log(name);
+   
+})
+.catch(function(error){
+  console.log(error);
+  
+})
+.finally(() => console.log("The promise is either resolved or rejected"));
+
+const promiseFive = new Promise(function(resolve, reject){
+      setTimeout(function(){
+    let error = true
+    if(!error){
+       resolve({name: "JavaScript", password: 122564})
+    } else {
+      reject('ERROR: JS went wrong')
+    }
+   }, 1000)
+})
+
+async function consumePromiseFive(){
+   try {
+      const response = await promiseFive
+     console.log(response);
+   } catch (error){
+     console.log(error);
+     
+   }
+   
+}
+consumePromiseFive()
