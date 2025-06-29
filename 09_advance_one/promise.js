@@ -76,7 +76,7 @@ const promiseFive = new Promise(function(resolve, reject){
 async function consumePromiseFive(){
    try {
       const response = await promiseFive
-     console.log(response);
+      console.log(response);
    } catch (error){
      console.log(error);
      
@@ -84,3 +84,27 @@ async function consumePromiseFive(){
    
 }
 consumePromiseFive()
+
+// async function getAllUsers(){
+//   try {
+//   const response =  await fetch('https://jsonplaceholder.typicode.com/users')
+//     const data =  await response.json()
+//     console.log(data);
+    
+//   } catch (error) {
+//     console.log("E:", error);
+    
+//   }
+// }
+// getAllUsers()
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+   return response.json()
+})
+.then((data) => {
+   console.log(data);
+   
+})
+.catch( (error) => console.log(error));
+ 
